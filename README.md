@@ -1,7 +1,9 @@
 # Underwater Fish Detection using Object Detection Models
-This project aims to detect and classify various underwater creatures such as fish, jellyfish, sharks, and starfish using object detection techniques. The dataset used is the publicly available Aquarium Object Detection Dataset.
+Underwater object detection plays a crucial role in marine research, wildlife monitoring, and conservation.
+This project focuses on detecting various underwater species using deep learning-based object detection techniques. Leveraging the Aquarium dataset from Kaggle, models like YOLOv5, Faster R-CNN, SSD, RetinaNet, and EfficientDet were trained and compared to identify marine objects such as fish, sharks, and starfish. The aim is to deploy an accurate and efficient detection model for marine research and monitoring applications.
 
-📂 Dataset
+
+# 📂 Dataset
 Source: Kaggle – Aquarium Object Detection
 
 Path used: /kaggle/input/aquarium-data-cots
@@ -11,7 +13,7 @@ Classes:
 
 Contains annotated images with bounding boxes for training object detection models.
 
-🎯 Objectives
+# 🎯 Objectives
 To preprocess and annotate underwater images.
 
 To train and compare various object detection models.
@@ -20,7 +22,7 @@ To determine the most efficient model based on accuracy, speed, and confidence s
 
 To deploy the best model for real-time fish detection.
 
-⚙️ Preprocessing
+# ⚙️ Preprocessing
 Converted all annotations to YOLO format.
 
 Resized images to a fixed dimension (448×448) to maintain uniformity.
@@ -29,7 +31,7 @@ Applied image augmentation (optional step).
 
 Split dataset into train, validation, and test sets.
 
-🧠 Models Used
+# 🧠 Models Used
 YOLOv5
 
 SSD (Single Shot MultiBox Detector)
@@ -75,7 +77,8 @@ streamlit run app.py
 
 
 # 🧾 Conclusion
-The project compares multiple deep learning models on underwater object detection. Faster R-CNN emerged as the most effective model due to its superior detection precision, though YOLOv5 is recommended for real-time use due to its speed.
+This project evaluated multiple object detection models for underwater species detection.
+Among them, Faster R-CNN achieved the highest accuracy and confidence score, making it the most reliable for precise detection. However, YOLOv5 is better suited for real-time applications due to its speed. The results demonstrate that model choice should balance accuracy and efficiency based on deployment needs.
 
 
 
